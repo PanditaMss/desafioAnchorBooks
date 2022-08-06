@@ -1,5 +1,7 @@
 import java.util.List;
 
+
+
 public class Book {
 
 	private String author;
@@ -75,11 +77,18 @@ public class Book {
 	public static void obtenerlistaexplicita(List<Book> list) {
 		System.out.println("Autor 3 y 8: ");
 		for (int i = 0; i < list.size(); i++) {
-			if (i == 3 || i == 8) {
+			if (i == 2 || i == 7) {
 				System.out.println(list.get(i).author + ":" + list.get(i).title);
 			}
 		}
-
 	}
-	
+	public static void listalibrosautoresanonimos(List<Book> list) {
+		System.out.println("autores anonimos: ");
+		for (int i = 0; i < list.size(); i++) {
+			if (list.get(i).author.equals("Unknown")) {
+				System.out.println("Author: "+ list.get(i).author + " libro: "+  list.get(i).title);
+			}
+			
+		}
+	}
 }
