@@ -22,7 +22,7 @@ public class Main {
 		
 		List<Book> list = respuestaAPI.readEntity(new GenericType<List<Book>>() {});
 		
-		
+		//mod lis
 		System.out.println(list.toString());
 		book.Obtenerautorytitulo(list);
 		book.obtenerlistaexplicita(list);
